@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Creando un web server para poder exponer una pagina web",
   "main": "src/app.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon src/app.js"
   },

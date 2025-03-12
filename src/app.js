@@ -1,8 +1,8 @@
 // Importamos las variables de entorno definidas en envs.js
-const { envs } = require('./confing/env');
+import { envs } from './confing/env.js';
 
 // Importamos la función que inicia el servidor
-const { startServer } = require('./server/server');
+import { startServer } from './server/server.js';
 
 // ------------------------------
 // FUNCIÓN MAIN 
