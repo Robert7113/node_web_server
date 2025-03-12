@@ -1,0 +1,19 @@
+{
+  "name": "web-servers",
+  "version": "0.0.1",
+  "description": "Creando un web server para poder exponer una pagina web",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Roberto Carlos Barragan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "env-var": "^7.5.0",
+    "express": "^4.21.2"
+  }
+}

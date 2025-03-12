@@ -1,0 +1,44 @@
+Practica 2
+web servers-servidro que podemos exponer una web.
+
+Descargamos el package.json  -> npm init
+
+Luego hacemos las configuracion del script en el package.json, en la seccion de ""scripts".
+Para podes correr el proyecto.
+Ahi ponemos lo siguiente: "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+
+Osea que solo correra la aplicacion con nodemon, y para eso tenemos que instalarlo en nuestra
+carpeta.
+En la terminal, escribimos:  npm i nodemon --save-dev, esto se instalara en la seccion de independen
+cias.
+
+Luego de eso dentro de la misma carpeta de src creamos una carpeta server, creamos un archivo server.js.
+Tambien en sr creamos una carpeta confing donde crearemos un archivo con las variables de entorno .env.js
+Luego en la locacin principal crearemos el archivo .env donde definiremos las variables.
+
+Despues, como estamos creando un web server y yo quiero exponer cual va a ser mi  carpeta expuesta.
+Asi que en el archivo .env vamos a declarar ese camino.
+Declaramos lo siguiente:
+
+PUBLIC_PATH = public
+
+Lo que estamos diciendo es que la carpeta public es lo que se va a exponer en el server.
+Luego de poner los archivos de nuestro softaware, vamos a descargar dotenv, para poder manejar las variables
+de entorno.
+
+Vamos a la carpta de confing/env
+escribimos 
+require('dotenv').config()
+//El .config() lo que hace es que las variables de entorne se seteen en nuestro objeto process para que esten
+disponibles.
+
+Recordemos que tambien necesitamos env-var
+para poder darle una popriades a esas varibles, caracter,numerica, etc.n
+
+Lo instalamos usando npm i env-var,
+Luego hacemos las exportacios e importaciones de las varibles de entorno, tamto en el archivo env.js, como en el archivo
+app.js,
+
+rest api -get-put-post,
